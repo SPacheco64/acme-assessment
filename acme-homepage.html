@@ -1,0 +1,488 @@
+<!-- Developer: Sergio Pacheco (6/11/2021) -->
+
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <title>ACME Corporation | Research Professional Platform</title>
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+        
+        <!-- Bootstrap CSS -->
+        <link rel = "stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        
+        <!-- Bootstrap JS-->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+        <!-- Interstate Font -->
+        <link rel="stylesheet" href="https://use.typekit.net/iqx8rpm.css">
+
+        <!-- Swiper JS & CSS for Mobile Carousels -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+        <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+        <!-- Custom ACME CSS -->
+        <link rel = "stylesheet" href = "acme-css.css">
+    </head>
+
+    <body>
+        
+        <!-- ACME Header -->
+        <header id = "acmeHeader">
+            <!-- Header Navigation -->
+            <nav class = "navbar navbar-expand-lg">
+                <div class = "container-fluid">
+                    <a class = "navbar-brand" href = "acme-homepage.html">
+                        <!-- ACME Logo - Set to change image source based on device size (Desktop vs. Mobile) -->
+                        <picture>
+                            <source media = "(min-width: 992px)" srcset = "images/png/acme-logo-d.png"> <!-- Desktop Logo -->
+                            <source media = "" srcset = "images/png/acme-logo-m.png"> <!-- Mobile Logo -->
+                            <img src = "images/png/acme-logo-d.png" alt = "Acme Corporation - Research Professional Platform." id = "acmeLogo"> 
+                        </picture>
+                    </a>
+
+                    <div id = "headerDivider">
+                        &nbsp;
+                    </div>
+
+                    <button class = "hamburger navbar-toggler" type = "button" data-toggle = "collapse" data-target = "#mobileNav" aria-controls = "mobileNav" aria-expanded = "false" aria-label = "Toggle mobile navigation">
+                        <div class = "bar1"></div>
+                        <div class = "bar2"></div>
+                        <div class = "bar3"></div>
+                    </button>
+
+                    <!-- Header Navigation for Mobile Devices (Site Navigation Items) -->
+                    <div class = "collapse" id = "mobileNav">
+                        <ul class = "navbar-nav">
+                            <div class = "siteLinks"> Site Links </div>
+                            <li class = "nav-item">
+                                <a class = "nav-link top-nav-btn active" aria-current = "page" href = "acme-homepage.html"> Home </a>
+                            </li>
+                            <li class = "nav-item">
+                                <a class = "nav-link top-nav-btn" href = "#"> About Us </a>
+                            </li>
+                            <li class = "nav-item">
+                                <a class = "nav-link top-nav-btn" href = "#"> Insights </a>
+                            </li>
+                            <li class = "nav-item">
+                                <a class = "nav-link top-nav-btn" href = "#"> Events </a>
+                            </li>
+                            <li class = "nav-item">
+                                <a class = "nav-link top-nav-btn" href = "#"> Contact Us </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Header Navigation for Desktop Devices (Site Navigation Items) -->
+                    <div class = "" id = "desktopNav">
+                        <ul class = "navbar-nav">
+                            <li class = "nav-item">
+                                <a class = "nav-link active" aria-current = "page" href = "acme-homepage.html"> Home </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href = "#"> About Us </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class = "nav-link" href = "#"> Insights </a>
+                            </li>
+                            <li class = "nav-item">
+                                <a class = "nav-link" href = "#"> Events </a>
+                            </li>
+                            <li class = "nav-item">
+                                <a class = "nav-link" href = "#"> Contact Us </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div id = "screenOverlay">
+            &nbsp;            
+        </div>
+
+        <div id = "pageContent" class = "row-p-0">
+            <!-- Wealth Management Section-->
+            <div id = "wealthManagement">
+                <div class = "section-content">
+                    <div id = "wealthMobileHead" class = "content-txt-md mobile-exclusive">Research Professional Solutions</div>
+
+                    <div class = "section-header-lgst">
+                        <span class = "wealth-h1">ACME Wealth</span><br>
+                        <span class = "wealth-h2">Management<br class = "mobile-exclusive"> Platforms</span>
+                    </div>
+
+                    <div id = "wealthDotDivider">
+                        <span class = "dot"></span><span class = "dot"></span><span class = "dot"></span><span class = "dot"></span><span class = "dot"></span><span class = "dot"></span><span class = "dot"></span><span class = "dot"></span><span class = "dot"></span><span class = "dot"></span><span class = "dot"></span><span class = "dot"></span><span class = "dot"></span><span class = "dot"></span><span class = "dot"></span><span class = "dot"></span><span class = "dot"></span>
+                    </div>
+                    
+                    <div class = "content-txt-md">
+                        Investment excellence.<br>
+                        Diversity of thought.<br>
+                        Organizational strength.
+                    </div>
+                </div>
+            </div>
+
+            <!-- ACME Insights Section -->
+            <div id = "acmeInsights">
+                <div class = "section-content">
+                    <div id = "insightsMobile">
+                        <div>
+                            <span class = "section-header-lg">ACME <b>Insights</b></span><br>
+                            <span class = "content-txt-sm">How are factors being used around the world?</span>
+                        </div>
+                        <!-- Events Slider - START -->
+                        <!-- Mobile slider main container -->
+                        <div class = "swiper-container">
+                            <div class = "swiper-wrapper">
+                                <!-- Events slides - START -->
+                                <div class = "swiper-slide">
+                                    <div class = "tri-col-container">
+                                        <div class = "tri-col-content text-center tri-box-slblue">
+                                            <div class = "tri-col-container">
+                                                <img class = "img-fluid tri-col-img" alt = "" src = "images/png/global-factor-d.png">
+                                                <div class = "tri-col-txt section-header-md font-weight-bold">
+                                                    Global Factor<br>
+                                                    Investing Study
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class = "tri-col-content text-center tri-box-seafoam">
+                                        <div class = "tri-col-container">
+                                            <img class = "img-fluid tri-col-img" alt = "" src = "images/png/outlook-d.png">
+                                            <div class = "tri-col-txt section-header-md font-weight-bold">
+                                                2019<br>
+                                                Outlook
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class = "tri-col-content text-center tri-box-lghtbl">
+                                        <div class = "tri-col-container">
+                                            <img class = "img-fluid tri-col-img" alt = "" src = "images/png/capital-d.png">
+                                            <div class = "tri-col-txt section-header-md font-weight-bold">
+                                                Capital Market<br>
+                                                Assumptions
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Event slides - END -->
+                            </div>
+                            <!-- Pagination dots -->
+                            <div class = "swiper-pagination"></div>
+                        </div>
+                        <!-- Events Slider - END -->
+                    </div>
+
+                    <div id = "insightsDesktop">
+                        <div>
+                            <span class = "section-header-md">ACME Insights</span><br>
+                            <span class = "content-txt-sm">How are factors being used around the world?</span>
+                        </div>
+                        <div class = "row tri-col-row">
+                            <div class = "col-sm">
+                                <div class = "tri-col-content text-center tri-box-slblue">
+                                    <div class = "tri-col-container">
+                                        <img class = "img-fluid tri-col-img" alt = "" src = "images/png/global-factor-d.png">
+                                        <div class = "tri-col-txt section-header-md">
+                                            Global Factor<br>
+                                            Investing Study
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class = "col-sm">
+                                <div class = "tri-col-content text-center tri-box-seafoam">
+                                    <div class = "tri-col-container">
+                                        <img class = "img-fluid tri-col-img" alt = "" src = "images/png/outlook-d.png">
+                                        <div class = "tri-col-txt section-header-md">
+                                            2019<br>
+                                            Outlook
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class = "col-sm">
+                                <div class = "tri-col-content text-center tri-box-lghtbl">
+                                    <div class = "tri-col-container">
+                                        <img class = "img-fluid tri-col-img" alt = "" src = "images/png/capital-d.png">
+                                        <div class = "tri-col-txt section-header-md">
+                                            Capital Market<br>
+                                            Assumptions
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Our Commitment Section -->
+            <div id = "ourCommitment">
+                <div class = "section-content">
+                    <h1 class = "section-header-lg">
+                        Our Commitment to Professionals
+                    </h1>
+                    <div class = "content-txt-md">
+                        We help our partners deliver industry leading results with a commitment to excellence, thought-provoking insights and experienced distribution. We are laser focused on our shared goal – helping clients achieve their objectives. 
+                    </div>
+                    <a href = "#" class = "unfilled-btn">
+                        Contact Us
+                    </a>
+                    <div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Upcoming Events Section -->
+            <div id = "eventsSection">
+                <div class = "section-content">
+                    <div id = "eventsMobile">
+                        <div>
+                            <span class = "section-header-lg">Upcoming <b>Events</b></span><br>
+                            <span class = "content-txt-sm">At ACME, we're dedicated to learning connecting, and exploring opportunities.</span>
+                        </div>
+
+                        <!-- Events Slider - START -->
+                        <!-- Mobile slider main container -->
+                        <div class = "swiper-container">
+                            <div class = "swiper-wrapper">
+                                <!-- Events slides - START -->
+                                <div class = "swiper-slide">
+                                    <div class = "tri-col-container">
+                                        <div class = "tri-col-content">
+                                            <img class = "img-fluid tri-col-img" alt = "" src = "images/png/event-block-bg-m.png">
+                                            <div class = "tri-col-txt">
+                                                <span class = "section-header-sm font-weight-bold">Insight Exchange Network</span><br>
+                                                <span class = "content-txt-sm">Join us for this conference showcasing innovation.</span>
+                                            </div>
+                                            <a href = "#" class = "unfilled-btn">
+                                                Get More Insight
+                                            </a>
+                                            <div class = "event-date">
+                                                <span class = "content-txt-sm"> JAN </span><br>
+                                                <span class = "m-date-num"> 28 </span>
+                                            </div>
+                                            <div class = "content-txt-md event-location">
+                                                Chicago, IL
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class = "tri-col-container">
+                                        <div class = "tri-col-content">
+                                            <img class = "img-fluid tri-col-img" alt = "" src = "images/png/event-block-bg-m.png">
+                                            <div class = "tri-col-txt">
+                                                <span class = "section-header-sm font-weight-bold">Citywide Buyer’s Retreat</span><br>
+                                                <span class = "content-txt-sm">Find out how banks are responding to the changing future of interest...</span>
+                                            </div>
+                                            <a href = "#" class = "unfilled-btn">
+                                                Get More Insight
+                                            </a>
+                                            <div class = "event-date">
+                                                <span class = "content-txt-sm"> FEB </span><br>
+                                                <span class = "m-date-num"> 12 </span>
+                                            </div>   
+                                            <div class = "content-txt-md event-location">
+                                                The Wagner, New York 
+                                            </div>                                  
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class = "tri-col-container">
+                                        <div class = "tri-col-content">
+                                            <img class = "img-fluid tri-col-img" alt = "" src = "images/png/event-block-bg-m.png">
+                                            <div class = "tri-col-txt">
+                                                <span class = "section-header-sm font-weight-bold">Research Exchange</span><br>
+                                                <span class = "content-txt-sm">Find the best online resources to help with your investments...</span>
+                                            </div>
+                                            <a href = "#" class = "unfilled-btn">
+                                                Get More Insight
+                                            </a>
+                                            <div class = "event-date">
+                                                <span class = "content-txt-sm"> MAY </span><br>
+                                                <span class = "m-date-num"> 6 </span>
+                                            </div>
+                                            <div class = "content-txt-md event-location">
+                                                London, England
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Event slides - END -->
+                            </div>
+                            <!-- Pagination dots -->
+                            <div class = "swiper-pagination"></div>
+                        </div>
+                        <!-- Events Slider - END -->
+                    </div>
+
+                    <div id = "eventsDesktop">
+                        <div>
+                            <span class = "section-header-md">Upcoming Events</span><br>
+                            <span class = "content-txt-sm">At ACME, we're dedicated to learning connecting, and exploring opportunities.</span>
+                        </div>
+                        <div class = "row tri-col-row">
+                            <div class = "col-sm">
+                                <div class = "tri-col-content text-center">
+                                    <div class = "tri-col-container">
+                                        <img class = "img-fluid tri-col-img" alt = "" src = "images/png/event-block-bg-d.png">
+                                        <div class = "tri-col-txt">
+                                            <span class = "section-header-sm font-weight-bold">Insight Exchange Network</span><br>
+                                            <span class = "content-txt-sm">Join us for this conference showcasing innovation.</span>
+                                        </div>
+                                        <a href = "#" class = "unfilled-btn">
+                                            Get More Insight
+                                        </a>
+                                        <div class = "event-date">
+                                            <span class = "content-txt-sm"> JAN </span><br>
+                                            <span class = "section-header-lg"> 28 </span>
+                                        </div>
+                                        <div class = "content-txt-md event-location">
+                                            Chicago, IL
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class = "col-sm">
+                                <div class = "tri-col-content text-center">
+                                    <div class = "tri-col-container">
+                                        <img class = "img-fluid tri-col-img" alt = "" src = "images/png/event-block-bg-d.png">
+                                        <div class = "tri-col-txt">
+                                            <span class = "section-header-sm font-weight-bold">Citywide Buyer’s Retreat</span><br>
+                                            <span class = "content-txt-sm">Find out how banks are responding to the changing future of interest...</span>
+                                        </div>
+                                        <a href = "#" class = "unfilled-btn">
+                                            Get More Insight
+                                        </a>
+                                        <div class = "event-date">
+                                            <span class = "content-txt-sm"> FEB </span><br>
+                                            <span class = "section-header-lg"> 12 </span>
+                                        </div>
+                                        <div class = "content-txt-md event-location">
+                                            The Wagner, New York 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class = "col-sm">
+                                <div class = "tri-col-content text-center">
+                                    <div class = "tri-col-container">
+                                        <img class = "img-fluid tri-col-img" alt = "" src = "images/png/event-block-bg-d.png">
+                                        <div class = "tri-col-txt">
+                                            <span class = "section-header-sm font-weight-bold">Research Exchange</span><br>
+                                            <span class = "content-txt-sm">Find the best online resources to help with your investments...</span>
+                                        </div>
+                                        <a href = "#" class = "unfilled-btn">
+                                            Get More Insight
+                                        </a>
+                                        <div class = "event-date">
+                                            <span class = "content-txt-sm"> MAY </span><br>
+                                            <span class = "section-header-lg"> 6 </span>
+                                        </div>
+                                        <div class = "content-txt-md event-location">
+                                            London, England
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id = "bottomLogo">
+            <img alt = "" src = "images/png/acme-logo-textless-m.png">
+        </div>
+
+        <!-- ACME Footer -->
+        <footer id = "globalFooter">
+            <!-- Desktop Device Size Footer -->
+            <div id = "desktopFooter">
+                <div class = "container-fluid text-center">
+                    <!-- Global Footer Content-->
+                    <div class = "row">
+                        <!-- Leftmost Footer Content -->
+                        <div class = "col-md-6 mt-md-0 mt-3 left-footer text-md-left">
+                            Call us at 111-222-3333<br>
+                            for more information 
+                        </div>
+
+                        <!-- Rightmost Footer Content -->
+                        <div class = "col-md-6 mb-md-0 mb-3 right-footer text-md-right">
+                            Social Share 
+                            <span class = "social-icon">
+                                <a href = "#">
+                                    <img alt = "Twitter" src = "images/png/twitter-icon.png">
+                                </a>
+                            </span>
+                            <span class = "social-icon">
+                                <a href = "#">
+                                    <img alt = "Facebook" src = "images/png/facebook-icon.png">
+                                </a>
+                            </span>
+                            <span class = "social-icon">
+                                <a href = "#">
+                                    <img alt = "LinkedIn" src = "images/png/linkedin-icon.png">
+                                </a>
+                            </span>
+                            <span class = "social-icon">
+                                <a href = "#">
+                                    <img alt = "Email" src = "images/png/email-icon.png">
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile Device Size Footer -->
+            <div id = "mobileFooter">
+                <ul class = "navbar-nav">
+                    <li class = "nav-item top-footer">
+                        <a class = "nav-link foot-nav-btn float-left" href = "#"> Privacy Policy </a>
+                        <a class = "nav-link foot-nav-btn float-right" href = "#"> Terms of Use </a>
+                    </li>
+                    <div class = "siteLinks"> Site Links </div>
+                    <li class = "nav-item">
+                        <a class = "nav-link foot-nav-btn active" aria-current = "page" href = "acme-homepage.html"> Home </a>
+                    </li>
+                    <li class = "nav-item">
+                        <a class = "nav-link foot-nav-btn" href = "#"> About Us </a>
+                    </li>
+                    <li class = "nav-item">
+                        <a class = "nav-link foot-nav-btn" href = "#"> Insights </a>
+                    </li>
+                    <li class = "nav-item">
+                        <a class = "nav-link foot-nav-btn" href = "#"> Events </a>
+                    </li>
+                    <li class = "nav-item">
+                        <a class = "nav-link foot-nav-btn" href = "#"> Due Diligence </a>
+                    </li>
+                    <li class = "nav-item">
+                        <a class = "nav-link foot-nav-btn" href = "#"> Contact Us </a>
+                    </li>
+                </ul>
+            </div>
+
+        </footer>
+
+    </body>
+
+    <!-- Custom ACME JavaScript -->
+    <script src = "acme-js.js"></script>
+</html>
