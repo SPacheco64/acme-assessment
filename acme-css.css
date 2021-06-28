@@ -28,6 +28,7 @@ body
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
     background: var(--light-gray);
 }
+img, button{caret-color: transparent;}
 
 /* Mobile Header Styling - START */
 #acmeHeader
