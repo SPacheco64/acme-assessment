@@ -10,6 +10,11 @@ function mobileMenu()
     hamburger.classList.toggle("active");
     darkOverlay.classList.toggle("darken");
     pageBody.classList.toggle("no-scroll");
+
+    $("#mobileNav .nav-link").click(function () 
+    {
+        $(".hamburger").click();
+    });
 }
 
 // JS to initialize Swiper for Mobile Carousels
