@@ -223,10 +223,12 @@ img, button{ caret-color: transparent; }
 #eventsDesktop, #insightsDesktop{display: none;}
 #eventsMobile .event-date
 {
+    text-align: center;
     position: absolute;
     top: 1%;
-    left: 14.5%;    
+    left: 14.5%;
     color: var(--seafoam);
+    min-width: 2rem;
 }
 #eventsMobile .content-txt-md
 {
@@ -329,10 +331,10 @@ img, button{ caret-color: transparent; }
     #eventsMobile .event-date
     {
         position: absolute;
-        top: 3%;
-        left: 12.8%;
+        top: 2%;
+        left: 10.8%;
         color: var(--seafoam);
-        width: 5rem;
+        min-width: 5rem;
         text-align: center;
     }
     .unfilled-btn
@@ -348,7 +350,7 @@ img, button{ caret-color: transparent; }
     .section-header-md{font-size: 2.25rem; line-height: 2.5rem;}
     .section-header-lg{font-size: 2.75rem; font-weight: bold; line-height: 3.5rem;}
     .section-header-lgst{font-size: 3.25rem; font-weight: bold; line-height: 3.5rem;}
-    .content-txt-sm{font-size: 1.75rem;}
+    .content-txt-sm{font-size: 1.5rem;}
     .content-txt-md{font-size: 2rem;}
     .content-txt-lg{font-size: 2.25rem;}
     /* Reusable Font Sizing - END */
@@ -369,6 +371,15 @@ img, button{ caret-color: transparent; }
     }
     .swiper-pagination-bullet{height: 2rem; width: 2rem;}
     /* Custom Swiper Carousel Styling - END */
+    #eventsMobile .event-date 
+    {
+        position: absolute;
+        top: 3%;
+        left: 12.8%;
+        color: var(--seafoam);
+        min-width: 5rem;
+        text-align: center;
+    }
 }
 
 /* Large Device Breakpoint (992px and up, large tablets & smaller desktop screens) */
