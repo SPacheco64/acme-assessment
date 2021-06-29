@@ -380,6 +380,12 @@ img, button{ caret-color: transparent; }
         min-width: 5rem;
         text-align: center;
     }
+
+    /* Reusable Font Sizing - START */
+    .section-header-sm{font-size: 2rem; line-height: 2.5rem;}
+    .section-header-md{font-size: 2.5rem; line-height: 2.5rem;}
+    .content-txt-sm{font-size: 1.75rem;}
+    /* Reusable Font Sizing - END */
 }
 
 /* Large Device Breakpoint (992px and up, large tablets & smaller desktop screens) */
