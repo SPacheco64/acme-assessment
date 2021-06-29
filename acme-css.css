@@ -535,7 +535,7 @@ img, button{ caret-color: transparent; }
         width: 90%;
     }
     .event-location{top: 88%; right: 0; color: var(--black);}
-    .unfilled-btn{font-size: .75rem; width: 10rem;}
+    .unfilled-btn{font-size: 1rem; width: 10rem;}
     /* Main Content Sections Styling - END */
 
 
@@ -587,4 +587,15 @@ img, button{ caret-color: transparent; }
 {
     #desktopFooter{padding: 1rem 10rem;}
     #eventsSection .tri-col-txt{top: 20%;}
+    .unfilled-btn{font-size: 1.25rem; width: 12rem;}
+
+    /* Reusable Font Sizing - START */
+    .section-header-sm{font-size: 1.25rem; line-height: 1.5rem;}
+    .section-header-md{font-size: 1.75rem; line-height: 1.75rem;}
+    .section-header-lg{font-size: 2.25rem; font-weight: bold; line-height: 2rem;}
+    .section-header-lgst{font-size: 3rem; font-weight: bold; line-height: 3rem;}
+    .content-txt-sm{font-size: 1rem;}
+    .content-txt-md{font-size: 1.5rem;}
+    .content-txt-lg{font-size: 1.75rem;}
+    /* Reusable Font Sizing - END */
 }
