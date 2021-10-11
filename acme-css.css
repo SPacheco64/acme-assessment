@@ -310,6 +310,10 @@ img, button{ caret-color: transparent; }
 .swiper-slide{text-align: center;}
 .swiper-pagination-bullet{background: transparent; border: .05rem solid var(--pagination-col); opacity: 1; height: 1rem; width: 1rem;}
 .swiper-pagination-bullet-active{background: var(--pagination-col);}
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction
+{
+    bottom: -300px;
+}
 /* Custom Swiper Carousel Styling - END */
 
 
