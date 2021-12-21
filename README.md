@@ -9,6 +9,6 @@ A test website built to showcase the ability to convert a PSD website design int
 Tech Used: 
 - HTML5
 - CSS3 
-- Bootstrap 4 
+- Bootstrap
 - JavaScript 
 - jQuery
